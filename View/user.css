@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+}
+.container1{
+    background-image: linear-gradient(rgba(39, 24, 51, 0.5), rgba(8, 8, 8, 0.7)),
+    url(bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 500px;
+}
+nav{
+    display: flex;
+    height: 75px;
+    background-color: rgba(92, 85, 99, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 5em;
+}
+.logo img{
+    width: 50px;
+}
+.logo h3{
+    color: wheat;
+}
+.AuthDiv{
+    position: absolute;
+    right: 60px;
+    display: flex;
+    width: 22%;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+.AuthDiv button
+{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    color: aliceblue;  
+    font-size: 15px; 
+}
+.AuthDiv button:hover
+{
+    cursor: pointer;
+    background-color: turquoise;
+}
+.userName{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.userName img{
+    width: 65px;
+}
+.userName p{
+    color: goldenrod;
+    font-size: 30px;
+}
+.LogInBtn
+{
+    background-color:cadetblue;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    color: wheat;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.menuBar{
+    width: 40%;
+}
+.menu li{
+    padding: 5%;
+}
+.menu li:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    color: goldenrod;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.blogForm{
+    border: solid 1px;
+    border-radius: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputDiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    padding: 20px;
+}
+.inputDiv input, .inputDiv textarea{
+    width: 60%;
+    font-size: 15px;
+    padding: 10px 0px 10px 10px;
+}
+.inputDiv label{
+    font-size: 20px;
+}
+.submitBlogBtn{
+
+    padding: 10px 20px;
+    background: cornflowerblue;
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.submitBlog{
+    padding-bottom: 5%;
+}
+.submitBlogBtn:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+.container3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.blogCard{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px;
+    padding: 1% 5%;
+    gap: 10px;
+}
+
+.commentBox{
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.commentBox p{
+    width: 75%;
+    border: solid 1px;
+    padding: 5px 0px 2px 10px;
+}
+.commentsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+}
+.commentForm{
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+}
+.commentInput{
+    width: 85%;
+    padding: 10px 0px 5px 10px;
+}
+
+.commentSubmitBtn{
+    padding: 5px 10px;
+}
+.commentBtn{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background: aliceblue;
+}
+
+.commentBtn:hover{
+    cursor: pointer;
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+.margin0{
+    margin: 0;
+}
+
+.detailsContainer{
+    display: none;
+}
+
+.details:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: royalblue;
+    font-weight: 500;
+}
+
+.switchPosts{
+    border: solid 1px;
+    border-radius: 20px;
+}
+.switchPosts button{
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px ;
+}
+
+.switchPosts button:hover{
+    cursor: pointer;
+    background-color: darkcyan;
+    color: aliceblue;
+}
+
+.personalBtn{
+    display: none;
+}
+
+.update{
+    display: none;
+}

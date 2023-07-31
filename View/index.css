@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+.container1{
+    background-image: linear-gradient(rgba(39, 24, 51, 0.5), rgba(8, 8, 8, 0.7)),
+    url(bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 700px;
+}
+nav{
+    display: flex;
+    height: 75px;
+    background-color: rgba(92, 85, 99, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 5em;
+}
+.logo img{
+    width: 50px;
+}
+.logo h3{
+    color: wheat;
+}
+.AuthBtn{
+    position: absolute;
+    float: right;
+    right: 20px;
+}
+.AuthBtn button
+{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+    color: aliceblue;  
+    font-size: 15px; 
+}
+.AuthBtn button:hover
+{
+    cursor: pointer;
+    background-color: turquoise;
+}
+.SignUpBtn{
+    background-color: steelblue;
+}
+.LogInBtn
+{
+    background-color:cadetblue;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    color: wheat;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.menuBar{
+    width: 40%;
+}
+.menu li{
+    padding: 5%;
+}
+.menu li:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    color: goldenrod;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    width: 80%;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+.LogInForm{
+    position: absolute;
+    z-index: 10;
+    width: 35%;
+    background-color: cadetblue;
+    padding: 2%;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 12%;
+    display: none;
+    transition: display 0.3s ease;
+}
+.LogInForm h2{
+    color: aliceblue;
+}
+.inputDiv input {
+    border: none;
+    border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0px 15px 10px;
+}
+
+.SubmitBtn, .closeBtn {
+    background: aliceblue;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.SubmitBtn:hover, .closeBtn:hover {
+    background-color: goldenrod;
+    color: midnightblue;
+    cursor: pointer;
+}

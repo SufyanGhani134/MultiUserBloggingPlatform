@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="user.js"></script>
+</head>
+
+<body>
+    <div class="container1">
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+                <h3>BlogMingle</h3>
+            </div>
+            <div class="menuBar">
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="AuthDiv">
+                <div class="userName">
+                    <img src="userImg.png">
+                    <p id="userName"></p>
+                </div>
+                <button class="LogInBtn" id="LogOutBtn"> Log out</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container2">
+        <div class="blogForm">
+            <h2>Write Your Blog Here</h2>
+            <form id="blogForm">
+                <div>
+                    <label>Category</label>
+                    <select id="categorySelection">
+                        <option disabled selected>Select Category</option>
+                    </select>
+                </div>
+                <div class="inputDiv">
+                    <label for="title" style="padding-right: 20px;"> Title </label>
+                    <input type="text" name="title" id="Title" required>
+                </div>
+                <div class="inputDiv">
+                    <label for="content"> Content </label>
+                    <textarea name="content" type="text" rows="10" id="Body" required></textarea>
+                </div>
+                <div class="submitBlog">
+                    <input type="submit" class="submitBlogBtn">
+                    <input type="submit" class="submitBlogBtn update" value="Update Post" id="updateBtn">
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="switchPosts">
+            <button id="allPosts">All Posts</button>
+            <button id="personalPosts">Personal Posts</button>
+        </div>
+        <div class="container3" id="blogContainer"></div>
+        
+    </div>
+</body>
+
+</html>

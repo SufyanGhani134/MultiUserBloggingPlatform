@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(39, 24, 51, 0.5), rgba(8, 8, 8, 0.7)),
+                url(bgpattern.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .SignUpForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            color: burlywood;
+            border: solid;
+            border-radius: 30px;
+        }
+
+        .inputDiv {
+            display: flex;
+            flex-direction: column;
+            color: aliceblue;
+            width: 80%;
+            padding-bottom: 1em;
+            font-size: 20px;
+        }
+
+        .inputDiv input {
+            border: none;
+            border-radius: 5px;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 0px 15px 10px;
+        }
+
+        .SubmitBtn {
+            background: none;
+            border: solid 1px goldenrod;
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: goldenrod;
+            font-size: 20px;
+        }
+
+        .SubmitBtn:hover {
+            background-color: goldenrod;
+            color: midnightblue;
+            cursor: pointer;
+        }
+
+        .SignUpForm a {
+            color: goldenrod;
+            font-size: 20px;
+        }
+
+        .SignUpForm a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: greenyellow;
+        }
+
+        .SignUpBtn {
+            background-color: steelblue;
+        }
+
+        .LogInBtn {
+            background-color: cadetblue;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            color: wheat;
+            justify-content: space-evenly;
+            font-size: 20px;
+        }
+
+        .menuBar {
+            width: 40%;
+        }
+
+        .menu li {
+            padding: 5%;
+        }
+
+        .menu li:hover {
+            cursor: pointer;
+            background-color: aliceblue;
+            color: goldenrod;
+        }
+
+        .inputDiv {
+            display: flex;
+            flex-direction: column;
+            color: aliceblue;
+            width: 80%;
+            padding-bottom: 1em;
+            font-size: 20px;
+        }
+
+        .LogInForm {
+            position: absolute;
+            z-index: 10;
+            width: 35%;
+            background-color: cadetblue;
+            padding: 2%;
+            left: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 12%;
+            display: none;
+            transition: display 0.3s ease;
+        }
+        .LogInBtn,
+        .closeBtn {
+            background: aliceblue;
+            border: solid 1px;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+
+        .LogInBtn:hover,
+        .closeBtn:hover {
+            background-color: goldenrod;
+            color: midnightblue;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="SignUpForm.js"></script>
+</head>
+
+<body>
+    <form class="LogInForm" id="LogInForm">
+        <div class="inputDiv">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter Your Email" id="logInEmail" required />
+        </div>
+
+        <div class="inputDiv">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Password" id="logInPassword" required />
+        </div>
+
+        <div>
+            <input type="submit" class="LogInBtn" value="Log In">
+            <button class="closeBtn" id="closeBtn">Close</button>
+        </div>
+    </form>
+    <form class="SignUpForm" id="SignUpForm">
+        <h1>Sign Up Form</h1>
+        <div class="inputDiv">
+            <label for="userName">User Name</label>
+            <input type="text" name="userName" placeholder="Enter User Name Here..." id="userName" required />
+        </div>
+
+        <div class="inputDiv">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter Your Email" id="email" required />
+        </div>
+
+        <div class="inputDiv">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Password" id="password" required />
+        </div>
+
+        <div class="inputDiv">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" id="confirmPassword"
+                required />
+        </div>
+
+        <div>
+            <input type="submit" class="SubmitBtn" />
+        </div>
+        <hr style="width: 50%; margin-top: 9%;">
+        <p>OR</p>
+
+        <p>If you alreday have an Account, <a id="LogInAnchor">Log in</a></p>
+
+    </form>
+
+
+</body>
+
+</html>
